@@ -1,0 +1,96 @@
+/* Estilo para el ion-header */
+ion-header {
+    background: #f8f8f8;
+}
+
+/* Estilo para el ion-toolbar */
+ion-toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px; /* Espaciado pequeño para el toolbar */
+    --background: #ffffff; /* Fondo blanco */
+    --color: #333333; /* Texto oscuro */
+}
+
+/* Estilo para la barra de búsqueda */
+.searchbar {
+    --padding-start: 0;
+    --padding-end: 0;
+    --padding-top: 0;
+    --padding-bottom: 0;
+    --background: #ffffff;
+    --border-radius: 20px;
+    --icon-color: #888888;
+    --placeholder-color: #888888;
+    --input-placeholder-color: #888888;
+    --input-background: #f0f0f0;
+    height: 30px;
+    width: 150px;
+}
+
+/* Estilo para el título de recomendaciones y otras secciones */
+ion-toolbar ion-title {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilo para la imagen horizontal */
+.horizontal-image {
+    width: 100%;
+    height: auto;
+    margin-top: 16px; /* Espaciado opcional entre el título y la imagen */
+    border-radius: 8px; /* Bordes redondeados para un look más suave */
+}
+
+/* Estilo para los ion-card */
+ion-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para un look elegante */
+    margin: 8px; /* Espaciado entre tarjetas */
+}
+
+/* Estilo para las imágenes dentro de los ion-card */
+ion-card ion-img {
+    height: 200px; /* Altura ajustada para portadas de libros */
+    width: 100%;
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    border-radius: 8px 8px 0 0; /* Bordes redondeados superiores */
+}
+
+/* Estilo para el header del ion-card */
+ion-card-header {
+    background: #ffffff; /* Fondo blanco para un contraste claro */
+    text-align: center;
+    padding: 8px; /* Espaciado interior */
+}
+
+/* Estilo para el título del ion-card */
+ion-card-title {
+    font-size: 12px; /* Tamaño de fuente más pequeño y minimalista */
+    font-weight: normal; /* Peso de fuente normal */
+    margin: 0; /* Eliminar márgenes adicionales */
+}
+
+/* Estilo para el botón flotante */
+ion-fab {
+    --background: transparent; /* Fondo transparente */
+}
+
+/* Estilo para el botón flotante */
+ion-fab-button {
+    --background: #ffffff; /* Fondo blanco */
+    --border-radius: 50%; /* Botón circular */
+}
+
+/* Tamaño de la imagen del botón flotante */
+.fab-icon {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+

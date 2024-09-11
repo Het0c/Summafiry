@@ -1,0 +1,7 @@
+{
+  "name": "Summafiry",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
