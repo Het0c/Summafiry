@@ -1,6 +1,12 @@
+/* Fondo global del ion-content */
+ion-content {
+    --background: #D2E0FB; /* Fondo azul claro suave */
+}
+
 /* Estilo para el ion-header */
 ion-header {
-    background: #f8f8f8;
+    background: #FEF9D9; /* Fondo amarillo pálido con opacidad para el header */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para el header */
 }
 
 /* Estilo para el ion-toolbar */
@@ -8,89 +14,102 @@ ion-toolbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 8px 16px; /* Espaciado pequeño para el toolbar */
-    --background: #ffffff; /* Fondo blanco */
-    --color: #333333; /* Texto oscuro */
+    padding: 12px 16px; /* Espaciado para un look más espacioso */
+    --background: #D2E0FB; /* Fondo amarillo pálido para el toolbar */
+    --color: #8EACCD; /* Texto azul grisáceo para contraste */
+    border-bottom: 1px solid #DEE5D4; /* Línea sutil debajo del toolbar con verde pálido */
+    transition: background-color 0.3s ease; /* Transición suave para el color de fondo */
 }
 
 /* Estilo para la barra de búsqueda */
 .searchbar {
-    --padding-start: 0;
-    --padding-end: 0;
-    --padding-top: 0;
-    --padding-bottom: 0;
-    --background: #ffffff;
+    --background: #FFFFFF; /* Fondo blanco para la barra de búsqueda */
     --border-radius: 20px;
-    --icon-color: #888888;
-    --placeholder-color: #888888;
-    --input-placeholder-color: #888888;
-    --input-background: #f0f0f0;
-    height: 30px;
-    width: 150px;
+    --icon-color: #8EACCD; /* Azul grisáceo para íconos */
+    --placeholder-color: #666666;
+    --input-placeholder-color: #666666;
+    --input-background: #DEE5D4; /* Fondo verde pálido para el input */
+    height: 40px; /* Altura para mayor legibilidad */
+    width: 200px; /* Anchura cómoda */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera alrededor de la barra */
 }
 
-/* Estilo para el título de recomendaciones y otras secciones */
+/* Estilo para el título de secciones */
 ion-toolbar ion-title {
-    font-size: 18px;
+    font-size: 22px; /* Tamaño de fuente ligeramente mayor */
     font-weight: bold;
+    color: #8EACCD; /* Texto azul grisáceo para el título */
     text-align: center;
+    margin: 8px 0; /* Espaciado vertical uniforme */
+    background: #FEF9D9; /* Fondo amarillo pálido para el título */
+    padding: 8px; /* Espaciado interno para mejor visualización */
+    border-radius: 8px; /* Bordes redondeados para un look moderno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra ligera para efecto flotante */
 }
 
 /* Estilo para la imagen horizontal */
 .horizontal-image {
     width: 100%;
     height: auto;
-    margin-top: 16px; /* Espaciado opcional entre el título y la imagen */
-    border-radius: 8px; /* Bordes redondeados para un look más suave */
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra suave para profundidad */
 }
 
 /* Estilo para los ion-card */
 ion-card {
-    border-radius: 8px;
+    border-radius: 12px; /* Bordes redondeados para un look moderno */
     overflow: hidden;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para un look elegante */
-    margin: 8px; /* Espaciado entre tarjetas */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra sutil para efecto flotante */
+    margin: 12px; /* Espaciado entre tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto de hover más suave */
+    background: #FFFFFF; /* Fondo blanco para las tarjetas */
+}
+
+ion-card:hover {
+    transform: translateY(-8px); /* Efecto sutil al hacer hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al hacer hover */
 }
 
 /* Estilo para las imágenes dentro de los ion-card */
 ion-card ion-img {
-    height: 200px; /* Altura ajustada para portadas de libros */
+    height: 220px;
     width: 100%;
-    object-fit: cover; /* Mantiene la proporción de la imagen */
-    border-radius: 8px 8px 0 0; /* Bordes redondeados superiores */
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
 }
 
 /* Estilo para el header del ion-card */
 ion-card-header {
-    background: #ffffff; /* Fondo blanco para un contraste claro */
+    background: #FEF9D9; /* Fondo amarillo pálido para el header del card */
     text-align: center;
-    padding: 8px; /* Espaciado interior */
+    padding: 12px;
 }
 
 /* Estilo para el título del ion-card */
 ion-card-title {
-    font-size: 12px; /* Tamaño de fuente más pequeño y minimalista */
-    font-weight: normal; /* Peso de fuente normal */
-    margin: 0; /* Eliminar márgenes adicionales */
-}
-
-/* Estilo para el botón flotante */
-ion-fab {
-    --background: transparent; /* Fondo transparente */
+    font-size: 16px; /* Tamaño de fuente mayor para el título */
+    font-weight: 500;
+    color: #333333; /* Color oscuro para el texto */
 }
 
 /* Estilo para el botón flotante */
 ion-fab-button {
-    --background: #ffffff; /* Fondo blanco */
-    --border-radius: 50%; /* Botón circular */
+    --background: #8EACCD; /* Azul grisáceo para el botón flotante */
+    --border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra fuerte para efecto flotante */
+    width: 60px; 
+    height: 60px; /* Tamaño del botón flotante */
 }
 
 /* Tamaño de la imagen del botón flotante */
 .fab-icon {
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
 }
 
-
-
-
+/* Estilo para el ion-searchbar */
+ion-searchbar {
+    margin-left: 8px; /* Espaciado a los lados para mejor visibilidad */
+    margin-right: 8px;
+}

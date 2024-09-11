@@ -1,27 +1,57 @@
+<!-- Menú Lateral -->
+<ion-menu side="start" contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menú</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-item>Inicio</ion-item>
+      <ion-item>Perfil</ion-item>
+      <ion-item>Configuración</ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
 <ion-header>
   <ion-toolbar>
-    <ion-title>
-      
-    </ion-title>
-    <ion-buttons slot="end">
-      <ion-searchbar
-        placeholder="Buscar"
-        (ionInput)="onSearch($event)"
-        debounce="500"
-        class="searchbar"
-      ></ion-searchbar>
+    <!-- Icono de Menú (tres rayitas) -->
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
     </ion-buttons>
+
+    <ion-title>
+      <!-- Título de la página -->
+      Summafiry
+    </ion-title>
+
+    <!-- Icono de búsqueda -->
+    <ion-buttons slot="end">
+      <ion-button (click)="toggleSearch()">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+
+  <!-- Campo de búsqueda que se despliega -->
+  <ion-toolbar *ngIf="searchVisible">
+    <ion-searchbar
+      placeholder="Buscar..."
+      [(ngModel)]="searchQuery"
+      (ionInput)="onSearchChange($event)">
+    </ion-searchbar>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content id="main-content">
   <!-- Título de Recomendaciones -->
   <ion-toolbar>
     <ion-title>Recomendaciones</ion-title>
   </ion-toolbar>
 
-<!-- Imagen Horizontal -->
-<ion-img src="assets/recomendacion.jpg" class="horizontal-image"></ion-img>
+  <!-- Imagen Horizontal -->
+  <ion-img src="assets/recomendacion.jpg" class="horizontal-image"></ion-img>
 
   <!-- Sección de Categorías -->
   <ion-toolbar>
@@ -88,5 +118,3 @@
     </ion-fab-button>
   </ion-fab>
 </ion-content>
-
-
